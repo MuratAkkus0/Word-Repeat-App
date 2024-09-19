@@ -1,0 +1,41 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./reUseCss.css";
+@import "./toolbar.css";
+@import "./home.css";
+@import "./wortPool.css";
+@import "./add_new_word.css";
+@import "./study_cards.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+:root {
+  --black--: rgb(9, 9, 9);
+  --black-hover--: rgb(44, 44, 44);
+  --blue--: rgb(62, 116, 203);
+  --gray-background--: #fdfdfd;
+  --gray--: #ccc;
+  --black-border--: rgba(0, 0, 0, 0.076);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--gray-background--);
+}
+
+@media screen and (max-width: 767px) {
+  html,body,main{
+    height: fit-content;
+  }
+}
